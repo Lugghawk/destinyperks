@@ -1,0 +1,29 @@
+{
+	"name": "DestinyPerks",
+	"version": "0.1",
+	"minimum_chrome_version": "49",
+	"manifest_version": 2,
+	"description": "Replaces text on the DestinyTheGame subreddit that matches perks with a link to their description",
+	"content_scripts": [
+		{
+			"matches": [
+				"http://*.reddit.com/r/DestinyTheGame*",
+				"https://*.reddit.com/r/DestinyTheGame*",
+				"https://*.reddit.com/r/sandboxtest*"
+			],
+			"js": [
+				"jquery-1.12.4.min.js",
+				"perks.js",
+				"main.js"
+			]
+		}
+	],
+	"icons": {
+		"16": "picard.jpg",
+		"48":"picard.jpg"
+	},
+	"permissions": [
+		"http://*.reddit.com/r/DestinyTheGame"
+	]
+
+}
