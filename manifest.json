@@ -21,6 +21,11 @@
 			]
 		}
 	],
+	"applications":{
+		"gecko":{
+			"id": "destinyperks@example.com"
+		}
+	},
 	"icons": {
 		"16": "picard.jpg",
 		"48":"picard.jpg"
