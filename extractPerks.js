@@ -17,7 +17,8 @@ exporter.save('DestinySandboxPerkDefinition', './perks.json', function(err){
 		var minimalPerk = {
 			displayName: perk.displayName,
 			displayDescription: perk.displayDescription,
-			displayIcon: perk.displayIcon
+			displayIcon: perk.displayIcon,
+			html: '<span class="destinyperk" title="'+perk.displayDescription+'">'+perk.displayName+'</span>'
 		}
 		return minimalPerk;
 	});
@@ -25,6 +26,6 @@ exporter.save('DestinySandboxPerkDefinition', './perks.json', function(err){
 		return perk.displayName === undefined;
 	});
 
-	fs.writeFile('perks.json', 'var perks =' + JSON.stringify(perks));
+	fs.writeFile('perks.json', 'window.perks =' + JSON.stringify(perks));
 });
 
