@@ -1,0 +1,25 @@
+{
+  "name": "destinyperks",
+  "version": "0.1.0",
+  "description": "Provide alt-text for destiny perks that are detected in reddit posts",
+  "main": "main.js",
+  "dependencies": {
+    "binary-search-bounds": "^2.0.3",
+    "microtime": "^2.1.1",
+    "ramda": "^0.21.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lugghawk/destinyperks.git"
+  },
+  "author": "Dave Lugg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lugghawk/destinyperks/issues"
+  },
+  "homepage": "https://github.com/Lugghawk/destinyperks#readme"
+}
